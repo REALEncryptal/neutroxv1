@@ -1,5 +1,4 @@
 import { Container, Text, Button, Group } from '@mantine/core';
-import { GithubIcon } from '@mantinex/dev-icons';
 import classes from './hero.module.css';
 import discord from '../../assets/Discord White Icon.webp'
 import {discordInvite} from '../../config'

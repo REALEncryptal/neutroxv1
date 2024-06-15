@@ -1,4 +1,4 @@
-import { Card, Text, Image, Badge, Button, Group } from '@mantine/core';
+import { Card, Text, Image, Button, Group } from '@mantine/core';
 
 export function Product(productData: any) {
     return (
