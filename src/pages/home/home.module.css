@@ -6,10 +6,3 @@
     height: 100vh;
 }
 
-.products {
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
-    overflow: hidden;
-}

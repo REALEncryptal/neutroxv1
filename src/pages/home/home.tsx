@@ -1,28 +1,25 @@
 import '@mantine/core/styles.css';
-import { MantineProvider, SimpleGrid, Container } from '@mantine/core';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { Header } from '../../components/header/header';
 import { Hero } from '../../components/hero/hero';
-import { Product } from '../../components/product/product';
-import { products } from '../../config';
+import { Products } from '../../components/products/products';
+import { Features } from '../../components/features/features';
+import { Footer } from '../../components/footer/footer';
+import { Faq } from '../../components/faq/faq';
 import '@mantine/core/styles.css';
-import classes from './home.module.css';
 
+const theme = createTheme({
+    white: '#fff',
+})
 
 export default function Home() {
-    return <MantineProvider forceColorScheme="dark">
+    return <MantineProvider forceColorScheme="dark" theme={theme}>
         <Header/>
         <Hero/>
-
-        <div className={classes.products}>
-            <Container size="md">
-                <SimpleGrid cols={{ base: 1, xs: 4 }} spacing={25} mt={50}>
-                    {products.map((product) => (
-                        <Product {...product}/>
-                    ))}
-                </SimpleGrid>
-            </Container>
-        </div>
-
+        <Features/>
+        <Products/>
+        <Faq/>
+        <Footer/>
     </MantineProvider>;
 }
 

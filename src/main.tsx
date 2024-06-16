@@ -8,6 +8,11 @@ import Home from './pages/home/home'
 import '@mantine/core/styles.css';
 import './index.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,3 +25,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+AOS.init();

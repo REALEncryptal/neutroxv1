@@ -14,24 +14,25 @@ function Icon() {
 export function Hero() {
     var gradient ={ from: '#2d99fa', to: '#0375a4' }
   return (
+    <>
     <div className={classes.wrapper}>
         <div className={classes.left}></div>
         <div className={classes.right}></div>
         <div className={classes.middle}></div>
         <Container size={700} className={classes.inner}>
-        <h1 className={classes.title}>
+        <h1 data-aos="fade-up" data-aos-duration="1000" className={classes.title}>
           Dominate with{' '}
-          <Text className={classes.glow} component="span" variant="gradient" gradient={gradient} inherit>
+          <Text data-aos="fade-up" className={classes.glow} component="span" variant="gradient" gradient={gradient} inherit>
             Neutrox
           </Text>
         </h1>
 
-        <Text className={classes.description} color="dimmed">
+        <Text data-aos="fade-up" data-aos-duration="1200" className={classes.description} color="dimmed">
         Enjoy an unfair advantage and take your game to the
 next level with our simple, reliable, and unparalleled software.
         </Text>
 
-        <Group className={classes.controls}>
+        <Group data-aos="fade-up" data-aos-duration="1400" className={classes.controls}>
           <Button
           component='a'
             size="xl"
@@ -56,5 +57,6 @@ next level with our simple, reliable, and unparalleled software.
         </Group>
       </Container>
     </div>
+    </>
   );
 }

@@ -2,7 +2,7 @@ import { Card, Text, Image, Button, Group } from '@mantine/core';
 
 export function Product(productData: any) {
     return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
+    <Card data-aos="fade-up" data-aos-duration="1000" shadow="sm" padding="lg" radius="md" withBorder>
       <Card.Section>
         <Image
           src={productData.image}
