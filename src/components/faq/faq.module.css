@@ -5,7 +5,7 @@
 }
 
 .title {
-  color: #fff;
+  color: #fff ;
   margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
 }
 

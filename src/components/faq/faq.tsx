@@ -13,8 +13,10 @@ export function Faq() {
 
       <Accordion variant="separated">
         <Accordion.Item className={classes.item} value="reset-password">
-          <Accordion.Control>How can I reset my password?</Accordion.Control>
-          <Accordion.Panel>{placeholder}</Accordion.Panel>
+          <Accordion.Control>About us</Accordion.Control>
+          <Accordion.Panel>In 2020, we noticed a lot of troubles within the cheating industry, motivating us to put our expertise to work and create Neutrox. Lack of customer support, detected cheats, and untrustworthy providers pushed us to do better. Neutrox was founded on a customer-first approach, reflecting our commitment to quality and reliability.
+
+By 2023, we successfully developed, tested, and released over 20 products to our community, resulting in thousands of happy customers. Our team of passionate developers is dedicated to enhancing your gaming experience with top-notch, undetected cheats and exceptional support. We pride ourselves on our commitment to excellence and customer satisfaction.</Accordion.Panel>
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value="another-account">
