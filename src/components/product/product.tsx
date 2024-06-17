@@ -1,27 +1,45 @@
-import { Card, Text, Image, Button, Group } from '@mantine/core';
+import { Card, Text, Image, Group } from '@mantine/core';
+import classes from './product.module.css';
 
 export function Product(productData: any) {
-    return (
-    <Card data-aos="fade-up" data-aos-duration="1000" shadow="sm" padding="lg" radius="md" withBorder>
+
+  const handleProductClick = () => {
+    
+  }
+
+  return (
+    <button className={classes.button} onClick={handleProductClick}>
+    <Card
+      shadow="sm"
+      padding="lg"
+      radius="md"
+      className={classes.product}
+      withBorder
+    >
       <Card.Section>
-        <Image
-          src={productData.image}
-          height={160}
-          alt="Norway"
-        />
+        <Image src={productData.image} height={220} alt="Norway" />
       </Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
-        <Text fw={500}>{productData.name}</Text>
+        <Text fw={800} size="xl" style={{ color: "#2d99fa" }}>
+          {productData.name}
+        </Text>
       </Group>
 
-      <Text size="sm" c="dimmed">
-        {productData.description}
-      </Text>
-
-      <Button color="blue" fullWidth mt="md" radius="md">
-        ${productData.cost}
-      </Button>
-    </Card>
-    );
+      <Group justify="space-between">
+        <Text size="lg" fw={700} c="white">
+          {!productData.priceRange[1] ? `$${productData.priceRange[0]}` : `$${productData.priceRange[0]} - $${productData.priceRange[1]}`}
+        </Text>
+        <Text
+          size="lg"
+          fw={700}
+          className={
+            productData.detected ? classes.detected : classes.undetected
+          }
+        >
+          {productData.detected ? "Detected" : "Undetected"}
+        </Text>
+      </Group>
+    </Card></button>
+  );
 }

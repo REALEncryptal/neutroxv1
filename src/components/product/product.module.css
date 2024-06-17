@@ -1,0 +1,25 @@
+.undetected {
+    color: rgb(91, 255, 91);
+    text-shadow: 0 0 3px rgb(47, 242, 47);
+}
+
+.detected {
+    color: rgb(255, 91, 91);
+    text-shadow: 0 0 3px rgb(242, 47, 47);
+}
+
+.product {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: matrix3d(1.03,0,0.00,0,0.00,1.029,0.17,-.0001,0,-0.17,0.98,0,0,0,0,1);
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}

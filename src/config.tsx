@@ -1,62 +1,64 @@
 import placeholder from './assets/products/placeholder.png';
-import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import { IconGauge, IconRadarOff, IconBrain, IconDiscountCheckFilled, IconShieldCheckFilled, IconReceiptRefund } from '@tabler/icons-react';
 
 export const discordInvite = 'https://discord.gg/3YFZ2Qj';
 export const products = [
-    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, price: 20, description: 'Spoof your drives and never get banned again.'},
-    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, price: 20, description: 'Spoof your drives and never get banned again.'},
-    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, price: 20, description: 'Spoof your drives and never get banned again.'},
-    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, price: 20, description: 'Spoof your drives and never get banned again.'},
-    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, price: 20, description: 'Spoof your drives and never get banned again.'}
+    {name: 'Spoofer Permanents', id: 'sellix_id', type: "group", image: placeholder, priceRange: [10, 200], detected: false,description: 'Spoof your drives and never get banned again.'},
 ]
 
 export const data = [
     {
       title: 'About',
       links: [
-        { label: 'Features', link: '#' },
-        { label: 'Pricing', link: '#' },
-        { label: 'Support', link: '#' },
-        { label: 'Forums', link: '#' },
+        { label: 'Features', link: '#features' },
+        { label: 'Products', link: '#products' },
+        { label: 'Contact', link: '#contact' },
       ],
-    },
+    }, 
     {
-      title: 'Project',
-      links: [
-        { label: 'Contribute', link: '#' },
-        { label: 'Media assets', link: '#' },
-        { label: 'Changelog', link: '#' },
-        { label: 'Releases', link: '#' },
-      ],
-    },
-    {
-      title: 'Community',
-      links: [
-        { label: 'Join Discord', link: '#' },
-        { label: 'Follow on Twitter', link: '#' },
-        { label: 'Email newsletter', link: '#' },
-        { label: 'GitHub discussions', link: '#' },
-      ],
-    },
+        title: 'Socials', 
+        links: [
+          { label: 'Discord', link: discordInvite },
+          { label: 'Tik Tok', link: 'https://www.tiktok.com/@neutroxcheats' },
+          { label: 'Email', link: 'mailto: sales@neutrox.cc' },
+        ],
+      },
   ];
 
 export const mockdata = [
     {
-      title: 'FAST SUPPORT',
-      description:
-        'Our team of support staff are always ready to help you with any issues you may have',
-      icon: IconGauge,
+        title: 'FAST SUPPORT',
+        description:
+            'Our team of support staff are always ready to help you with any issues you may have',
+        icon: IconGauge,
     },
     {
-      title: 'Privacy focused',
-      description:
-        'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
-      icon: IconUser,
+        title: 'HIGH QUALITY',
+        description:
+            'Our software is packed with features that will help you dominate your competition',
+        icon: IconBrain,
     },
     {
-      title: 'No third parties',
-      description:
-        'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-      icon: IconCookie,
+        title: 'UNDETECTED CHEATS',
+        description:
+            'Our cheats are always undetected and we are constantly updating them to keep them that way',
+        icon: IconRadarOff,
     },
+    {
+        title: 'CHEAP PRICES',
+        description:
+            'We offer the best prices on the market for the quality of our products',
+        icon: IconDiscountCheckFilled,
+    },
+    {
+        title: 'TRUSTED PRODUCTS',
+        description:
+            'Our products are trusted by thousands of customers and are always being updated',
+        icon: IconShieldCheckFilled
+    },
+    { 
+        title: 'QUICK REFUNDS',
+        description: 'We offer quick refunds if you are not satisfied with our products',
+        icon: IconReceiptRefund
+    }
   ];

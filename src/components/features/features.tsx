@@ -32,7 +32,7 @@ export function Features() {
 
   return (
     <>
-    <Container size="lg" py="xl">
+    < Container size="lg" py="xl" id="features">
       <Title data-aos="fade-up" data-aos-duration="1000" order={2} className={classes.title} ta="center" mt="sm">
         Why choose Neutrox?
       </Title>
